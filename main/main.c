@@ -22,11 +22,12 @@
 #include <stdlib.h>
 
 #include "stack.h"
+#include "calculate.h"
 
 int main(int argc, char *argv[])
 {
-	Stack *head;
-
+/*	Stack *head;
+	
 	char a[10] = "123123";
 	char b[10] = "456456";
 	char c[10] = "789789";
@@ -46,6 +47,15 @@ int main(int argc, char *argv[])
 	printf("%s\n", d);
 
 	stack_dis(head);
+*/
+	char infix[50] = "9+(3-1)*3+10/2#";
+	char postfix[50];
+
+//	my_scanf(infix);
+	printf("infix\t%s\n", infix);
+	infix_to_postfix(infix, postfix);
+	printf("postfix\t%s\n", postfix);
+	
 	return EXIT_SUCCESS;
 }
 
