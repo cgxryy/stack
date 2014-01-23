@@ -15,7 +15,13 @@
  *
  * =====================================================================================
  */
+inline int judge_opt(char ch);
+inline int judge_num(char ch);
+inline int judge_pri(char ch);
 
 void my_scanf(char *s);
 
+void infix_to_postfix(char *infix, char *postfix);
+int  compare(char top, char ch);
 
+//int  calculate();
